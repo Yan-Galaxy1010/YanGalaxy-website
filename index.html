@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>水处理工程AI助手</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: '微软雅黑', Arial, sans-serif;
+      background: linear-gradient(to right, #d4fc79, #96e6a1);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 50px 20px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #333;
+      margin-bottom: 10px;
+      animation: slideDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #555;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 20px;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2a5d2a;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    a {
+      color: #2a5d2a;
+      text-decoration: none;
+    }
+
+    /* 动画效果 */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>水处理工程师AI智能体</h1>
+    <p>智能化污水处理工艺推荐与流程图生成</p>
+  </header>
+
+  <!-- 卡片区域 -->
+  <section class="cards-container">
+    <div class="card">
+      <h3>工艺流程生成</h3>
+      <p>一键生成标准化污水处理工艺流程图，支持SVG、Mermaid导出。</p>
+    </div>
+    <div class="card">
+      <h3>工艺比选优化</h3>
+      <p>自动比选多种处理工艺，智能推荐最优设计方案。</p>
+    </div>
+    <div class="card">
+      <h3>设计辅助计算</h3>
+      <p>快速完成核心参数计算，助力初步设计与方案定型。</p>
+    </div>
+  </section>
+
+  <!-- 底部 -->
+  <footer>
+    联系我们：<a href="mailto:YanGalaxy1010@163.com">YanGalaxy1010@163.com</a>
+  </footer>
+
+  <!-- 嵌入Dify助手 -->
+  <script>
+    window.difyChatbotConfig = {
+     token: '7o03UwlBaBdgdjzf',
+     baseUrl: 'http://localhost'
+    }
+   </script>
+   <script
+    src="http://localhost/embed.min.js"
+    id="7o03UwlBaBdgdjzf"
+    defer>
+   </script>
+   <style>
+     #dify-chatbot-bubble-button {
+       background-color: #1C64F2 !important;
+     }
+     #dify-chatbot-bubble-window {
+       width: 24rem !important;
+       height: 40rem !important;
+     }
+   </style>
+</body>
+</html>
