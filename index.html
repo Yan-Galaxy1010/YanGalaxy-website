@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>水处理工程师AI智能体</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #6fb1fc, #4364f7);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero a.button {
+      background: white;
+      color: #007BFF;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero a.button:hover {
+      background: #e0e0e0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .features, .faq {
+      background: white;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .features h2, .faq h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 32px;
+      color: #007BFF;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .feature-item {
+      font-size: 18px;
+      position: relative;
+      padding-left: 25px;
+    }
+    .feature-item::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #f1f1f1;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>水处理工程师AI助手</div>
+    <nav>
+      <a href="#features">功能介绍</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>智能水处理工程助手</h1>
+    <p>自动生成工艺流程图，智能比选最优设计方案</p>
+    <a href="#features" class="button">了解更多</a>
+  </div>
+
+  <section id="features" class="features">
+    <h2>我们的核心功能</h2>
+    <div class="feature-list">
+      <div class="feature-item">🚀 自动绘制污水处理工艺流程图（支持SVG、Mermaid格式）</div>
+      <div class="feature-item">🧠 智能比较不同处理工艺并推荐最优方案</div>
+      <div class="feature-item">📈 自动生成设计计算表，提升工程师效率</div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>常见问题 FAQ</h2>
+    <div class="faq-item">
+      <h3>Q: 需要注册才能使用吗？</h3>
+      <p>A: 不需要，打开网页即可使用基础功能。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: 适合哪些项目使用？</h3>
+      <p>A: 适合各类污水处理厂、污水提升泵站等工程设计与优化。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: 是否支持手机端浏览？</h3>
+      <p>A: 支持，响应式布局，自动适配手机和平板。</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    联系我们：YanGalaxy1010@163.com ｜ GitHub: https://yan-galaxy1010.github.io/YanGalaxy-website/  
+    <br>© 2025  水处理工程师AI智能体.  All rights reserved.
+  </footer>
+<!-- 嵌入Dify助手 -->
+<script>
+    window.difyChatbotConfig = {
+     token: '7o03UwlBaBdgdjzf',
+     baseUrl: 'http://localhost'
+    }
+   </script>
+   <script
+    src="http://localhost/embed.min.js"
+    id="7o03UwlBaBdgdjzf"
+    defer>
+   </script>
+   <style>
+     #dify-chatbot-bubble-button {
+       background-color: #1C64F2 !important;
+     }
+     #dify-chatbot-bubble-window {
+       width: 24rem !important;
+       height: 40rem !important;
+     }
+   </style>
+</body>
+</html>
